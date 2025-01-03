@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Marcellus", serif;
+}
+
+.logo-text {
+  font-family: sans-serif;
+}
+
+@keyframes spin360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotateOnHover:hover {
+  animation: spin360 0.8s ease forwards;
+}
+
+.hamburger-menu {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-menu:hover {
+  transform: scale(1.1);
+}
+
+.menu-icon,
+.active-icon {
+  transition: opacity 0.3s ease;
+}
+
+.menu-icon {
+  opacity: 1;
+}
+
+.active-icon {
+  opacity: 0;
+}
+
+.lheight {
+  line-height: 2.2rem !important;
+}
+
+.btn {
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: white;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  background-color: #45a049;
+}
+
+@keyframes kenBurns {
+  0% {
+    background-size: 100%;
+    background-position: center;
+  }
+  50% {
+    background-size: 110%;
+    background-position: center;
+  }
+  100% {
+    background-size: 100%;
+    background-position: center;
+  }
+}
