@@ -3,7 +3,7 @@ import innerimg from "../assets/inner-img-3.png";
 
 const About = () => {
   return (
-    <div className="relative h-[600px] flex justify-center items-center flex-col text-white gap-4 overflow-hidden">
+    <div className="relative h-[600px] flex justify-center items-center flex-col text-white gap-5 overflow-hidden">
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
         style={{
@@ -17,12 +17,12 @@ const About = () => {
       <h1 className="text-4xl">BEHOLD THE HORIZON AHEAD</h1>
 
       <img
-        className="w-[350px] transform transition-all duration-300 ease-in-out"
+        className="w-[350px] transform transition-all duration-300 ease-in-out "
         src={innerimg}
         alt="Inner Image"
         style={{
           position: "absolute",
-          top: "50%",
+          top: "53%",
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}

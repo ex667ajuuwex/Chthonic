@@ -46,6 +46,9 @@ const Hero = () => {
         className={`absolute inset-0 bg-cover bg-center transition-all duration-2000 ease-in-out`}
         style={{
           backgroundImage: `url(${heroData[currentIndex].background})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
           animation: "kenBurns 18s ease-in-out infinite",
         }}
       ></div>

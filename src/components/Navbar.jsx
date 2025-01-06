@@ -57,7 +57,7 @@ const Navbar = () => {
         } shadow-lg`}
         style={{ backgroundImage: `url(${sideareaimage})` }}
       >
-        <div className="flex justify-between items-center p-6 border-b border-gray-700">
+        <div className="flex justify-between items-center p-6">
           <div className="flex items-center space-x-4">
             <img src={logo} alt="Logo" className="h-[48px] w-12" />
             <span

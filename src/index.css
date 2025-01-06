@@ -94,3 +94,52 @@ body {
     background-position: center;
   }
 }
+/* Style for the dots navigation */
+.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Adjusts the vertical position of the dots */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the dots horizontally */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.slick-dots li {
+  margin: 0 5px; /* Adds spacing between dots */
+}
+
+.slick-dots li button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.slick-dots li button:before {
+  content: "";
+  display: block;
+  width: 10px; /* Size of the dot */
+  height: 10px; /* Size of the dot */
+  border-radius: 50%; /* Makes the dot round */
+  background-color: #ffffff; /* White dot */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover/active states */
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: #ffffff; /* Active dot color remains white */
+  transform: scale(1.2); /* Slightly enlarges the active dot */
+}
+
+.slick-dots li button:hover:before {
+  background-color: #ffffff; /* Hover effect remains white */
+  transform: scale(1.2); /* Slightly enlarge the dot on hover */
+}
+
+/* Limit the number of dots to 3 */
+.slick-dots {
+  width: 30px; /* Adjust the width to fit exactly 3 dots */
+  display: flex;
+  justify-content: center;
+}
